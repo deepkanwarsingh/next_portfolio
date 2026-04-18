@@ -35,7 +35,13 @@ export default function Navbar() {
             </Link>
           ))}
           <button className="px-6 py-2 border border-white/10 rounded-full text-xs font-bold hover:bg-white hover:text-black transition-all">
-            RESUME
+            <a
+              href="/Deepkanwar_Singh_CV.pdf"
+              download
+
+            >
+              Download Resume
+            </a>
           </button>
         </div>
 

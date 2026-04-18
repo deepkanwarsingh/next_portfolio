@@ -17,9 +17,9 @@ export default function Hero() {
             </div> */}
 
             <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-8 tracking-tighter outfit">
-              I&apos;m <span className="text-white">DeepKanwar Singh</span> <br />
-              Building User Interfaces <br />
-              <span className="glow-yellow text-primary-glow">with precision.</span>
+              <span className="text-white">DeepKanwar Singh</span> <br />
+              {/* Building User Interfaces <br /> */}
+              <span className="glow-yellow text-primary-glow">Software Developer</span>
             </h1>
 
             <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-xl">
@@ -31,9 +31,9 @@ export default function Hero() {
                 Projects
               </a>
               <a
-                href="/resume.pdf"
+                href="/Deepkanwar_Singh_CV.pdf"
                 download
-                className="px-8 py-4 bg-white/5 border border-white/10 rounded-full font-bold text-sm hover:bg-white/10 transition-colors flex items-center gap-2"
+                className="px-8 py-4 bg-white /5 border border-white/10 text-black rounded-full font-bold text-sm hover:bg-white/10 hover:text-white transition-colors flex items-center gap-2"
               >
                 Download Resume
               </a>
@@ -78,6 +78,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
