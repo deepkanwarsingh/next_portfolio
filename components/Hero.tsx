@@ -66,7 +66,7 @@ export default function Hero() {
             <div className="relative aspect-square rounded-3xl overflow-hidden glass-card p-2">
               <div className="relative w-full h-full rounded-2xl overflow-hidden">
                 <Image
-                  src="/avatar.png"
+                  src="/avatarr.png"
                   alt="Deep Kanwar Mann"
                   fill
                   className="object-cover"
