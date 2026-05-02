@@ -16,32 +16,31 @@ export default function Hero() {
               • AVAILABLE FOR SELECT PROJECTS
             </div> */}
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-8 tracking-tighter outfit">
+            <h1 className="text-4xl md:text-7xl font-bold leading-[1.1] mb-6 md:mb-8 tracking-tighter outfit">
               <span className="text-white">DeepKanwar Singh</span> <br />
-              {/* Building User Interfaces <br /> */}
               <span className="glow-yellow text-primary-glow">Software Developer</span>
             </h1>
 
-            <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-xl">
+            <p className="text-base md:text-lg text-gray-400 mb-8 md:mb-10 leading-relaxed max-w-xl">
               I am a senior software engineer specializing in high-performance web systems and intuitive user interfaces. I help scale-ups turn complex requirements into clean, maintainable, and elegant solutions.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 mb-12 md:mb-0">
               <a href="#projects" className="px-8 py-4 bg-primary-glow text-black rounded-full font-bold text-sm hover:scale-105 transition-transform box-glow-yellow">
                 Projects
               </a>
               <a
                 href="/Deepkanwar_Singh_CV.pdf"
                 download
-                className="px-8 py-4 bg-white /5 border border-white/10 text-black rounded-full font-bold text-sm hover:bg-white/10 hover:text-white transition-colors flex items-center gap-2"
+                className="px-8 py-4 bg-white/5 border border-white/10 text-white rounded-full font-bold text-sm hover:bg-white/10 transition-colors flex items-center gap-2"
               >
                 Download Resume
               </a>
             </div>
           </div>
 
-          <div className="md:col-span-5 hidden md:block">
-            <div className="flex justify-end gap-4 mb-6">
+          <div className="md:col-span-5">
+            <div className="flex justify-center md:justify-end gap-4 mb-6">
               <a
                 href="https://github.com"
                 target="_blank"
@@ -63,7 +62,7 @@ export default function Hero() {
                 </svg>
               </a>
             </div>
-            <div className="relative aspect-square rounded-3xl overflow-hidden glass-card p-2">
+            <div className="relative aspect-square max-w-[300px] md:max-w-none mx-auto rounded-3xl overflow-hidden glass-card p-2">
               <div className="relative w-full h-full rounded-2xl overflow-hidden">
                 <Image
                   src="/avatarr.png"
