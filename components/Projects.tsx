@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Projects() {
   return (
@@ -14,49 +16,68 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Featured Project */}
-          <div className="md:col-span-8 group">
-            <div className="relative aspect-[4/5] sm:aspect-[16/10] glass-card rounded-3xl overflow-hidden mb-8">
-              <div className="absolute inset-0 bg-black/40 z-10 md:bg-black/20 group-hover:bg-black/0 transition-colors" />
-              <Image 
-                src="/dashboard_mockup.png" 
-                alt="SaaS AI Platform" 
-                fill 
-                className="object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              
-              <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 z-20">
-                <span className="px-3 py-1 bg-primary-glow text-black text-[10px] font-black rounded-full mb-4 inline-block tracking-tighter">FEATURED</span>
-                <h3 className="text-2xl md:text-4xl font-bold mb-2 outfit">SaaS AI Platform</h3>
-                <p className="text-gray-300 text-xs md:text-sm max-w-sm mb-6">
-                  Full-scale enterprise dashboard for AI performance monitoring and resource management. Scaled to 10k+ daily users.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["React", "Next.js", "GraphQL"].map(tag => (
-                    <span key={tag} className="px-3 py-1 bg-white/10 rounded-full text-[10px] font-bold text-gray-400">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+<Link
+  href="https://interview-ai-frontend-lemon.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="md:col-span-8 group block"
+>
+  <div className="relative aspect-[4/5] sm:aspect-[16/10] glass-card rounded-3xl overflow-hidden mb-8">
+    <div className="absolute inset-0 bg-black/40 z-10 md:bg-black/20 group-hover:bg-black/0 transition-colors" />
+    
+    <Image
+      src="/image.png"
+      alt="SaaS AI Platform"
+      fill
+      className="object-cover group-hover:scale-105 transition-transform duration-700"
+    />
 
+    <div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 z-20">
+      <span className="px-3 py-1 bg-primary-glow text-black text-[10px] font-black rounded-full mb-4 inline-block tracking-tighter">
+        FEATURED
+      </span>
+
+      <h3 className="text-2xl md:text-4xl font-bold mb-2 outfit">
+        Resume Analyzer AI Platform
+      </h3>
+
+      <p className="text-gray-300 text-xs md:text-sm max-w-sm mb-6">
+        Full scale platform for analyzing resumes using AI.
+      </p>
+
+      <div className="flex flex-wrap gap-2">
+        {["React", "Node.js", "MongoDB", "Express.js", "Gen-AI", "Google Gemini"].map(
+          (tag) => (
+            <span
+              key={tag}
+              className="px-3 py-1 bg-white/10 rounded-full text-[10px] font-bold text-gray-400"
+            >
+              {tag}
+            </span>
+          )
+        )}
+      </div>
+    </div>
+  </div>
+</Link>
           {/* Secondary Projects */}
           <div className="md:col-span-4 flex flex-col gap-8">
             <div className="glass-card rounded-3xl p-6 md:p-8 flex-1 group hover:border-secondary-glow/30">
               <div className="w-10 h-10 bg-secondary-glow/10 rounded-xl flex items-center justify-center text-secondary-glow mb-6">
                 <span>🤖</span>
               </div>
-              <h3 className="text-xl font-bold mb-2 outfit">MLOps Pipeline</h3>
-              <p className="text-gray-500 text-xs mb-6">Automated cloud infrastructure for machine learning workflows.</p>
-              <span className="text-[10px] font-bold text-gray-600">AWS • PYTHON</span>
+              <h3 className="text-xl font-bold mb-2 outfit">party wity</h3>
+              <p className="text-gray-500 text-xs mb-6">A social media platfom clone </p>
+              <span className="text-[10px] font-bold text-gray-600">React, Tailwind CSS, context API</span>
             </div>
 
             <div className="glass-card rounded-3xl p-6 md:p-8 flex-1 group hover:border-primary-glow/30">
               <div className="w-10 h-10 bg-primary-glow/10 rounded-xl flex items-center justify-center text-primary-glow mb-6">
                 <span>📊</span>
               </div>
-              <h3 className="text-xl font-bold mb-2 outfit">Data Analytics</h3>
-              <p className="text-gray-500 text-xs mb-6">Real-time business intelligence for financial dashboards.</p>
-              <span className="text-[10px] font-bold text-gray-600">D3.JS • POSTGRES</span>
+              <h3 className="text-xl font-bold mb-2 outfit">Task manager</h3>
+              <p className="text-gray-500 text-xs mb-6">Real-time Task manager with drag-and-drop functionality.</p>
+              <span className="text-[10px] font-bold text-gray-600">Typescript, React</span>
             </div>
           </div>
         </div>
